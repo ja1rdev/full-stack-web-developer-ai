@@ -1,26 +1,22 @@
-# Create a ordered list
-list = list(range(1, 101))
-
 def binary_search(list, number):
     left = 0
-    right = len(list) - 1
+    rigth = len(list) - 1
 
-    while left <= right:
-        mid = (left + right) // 2
-        average_value = list[mid]
-        if average_value == number:
+    while left <= rigth:
+        mid = (left + rigth) // 2
+        if list[mid] == number:
             return mid
-        elif average_value < number:
+        elif list[mid] < number:
             left = mid + 1
         else:
-            right = mid - 1
+            rigth = mid - 1
     return -1
 
-# Example of use
-number_to_search = int(input("Enter the number to search: "))
-index = binary_search(list, number_to_search)
-        
-if index != -1:
-    print(f"The number {number_to_search} is at position {index}")
-else:
-    print(f"The number {number_to_search} was not found in the list")
+# Example usage
+if __name__ == "__main__":
+    list = list(range(1, 101))
+    number = int(input("Enter a number to search for: "))
+    if binary_search(list, number) !=  -1:
+        print(f"Number {number} found in the list.")
+    else:
+        print(f"Number {number} not found in the list.")
