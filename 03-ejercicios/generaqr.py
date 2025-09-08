@@ -1,5 +1,5 @@
 import qrcode
 
-link = "https://systems-laboratory-control.onrender.com"
+link = "https://web-production-6471c.up.railway.app/"
 img = qrcode.make(link)
-img.save("slc.png")
+img.save("ias.png")
