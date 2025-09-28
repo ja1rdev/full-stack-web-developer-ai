@@ -1,14 +1,7 @@
-from datetime import datetime
+from datetime import date
 
-# Get current date
-now = datetime.now()
+def calcular_edad(anio):
+    return date.today().year - anio
 
-# Get birthdate
-birthdate = datetime(2002, 7, 21)
-
-# Calculate age
-age = now - birthdate
-
-age_in_years = age.days // 365
-
-print(f"Age in years: {age_in_years} | {age}")
+anio = int(input("Ingresa tu año de nacimiento: "))
+print(f"Tienes: {calcular_edad(anio)} años")
