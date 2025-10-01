@@ -1,9 +1,9 @@
 for i in range(1, 101):
    if i % 5 == 0 and i % 3 == 0:
-      print("fizzbuzz")
+      print("FizzBuzz")
    elif i % 3 == 0:
-      print("fizz")
+      print("Fizz")
    elif i % 5 == 0:
-      print("buzz")
+      print("Buzz")
    else:
       print(i)
