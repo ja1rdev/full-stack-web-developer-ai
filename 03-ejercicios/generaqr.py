@@ -1,5 +1,5 @@
 import qrcode
 
-link = "https://control-of-systems-laboratories.onrender.com/"
+link = "https://computer-labs-management.onrender.com/"
 img = qrcode.make(link)
 img.save("csl.png")
