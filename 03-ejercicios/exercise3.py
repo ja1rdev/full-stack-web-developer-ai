@@ -5,8 +5,6 @@ b = int(input("Enter another number: "))
 
 print(f"Initial values a = {a}, b = {b}")
 
-temp = a
-a = b
-b = temp
+a, b = b, a
 
 print(f"Exchanged values a = {a}, b = {b}")
